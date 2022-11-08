@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="css/mainCss.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
+	<script type="text/javascript" src="js/mainJs.js"></script>
+</head>
+<body>
+
+<div id="main">
+	<div id="heder">
+		<p>calc</p>
+		<div id="right">
+			<p>THEME</p>
+			<p class="top">1</p><p class="top">2</p><p class="top">3</p>
+			<div id="toggle">
+				<div id="cursor" style="cursor: pointer;" onclick="moveToggle(this)"></div>
+			</div>
+		</div>
+	</div>
+	<div id="resultField">
+		<!-- <span id="result">399,981</span> -->
+		<span id="result"></span>
+	</div>
+	<div id="buttonsField">
+		<div class="row clicable">
+			<p onclick="engine(this)" >7</p><p onclick="engine(this)">8</p><p onclick="engine(this)">9</p><p id="del" onclick="deleteCharacter()">DEL</p>
+		</div>
+		<div class="row clicable">
+			<p onclick="engine(this)">4</p><p onclick="engine(this)">5</p><p onclick="engine(this)">6</p><p onclick="engine(this)">+</p>
+		</div>
+		<div class="row clicable">
+			<p onclick="engine(this)">1</p><p onclick="engine(this)">2</p><p onclick="engine(this)">3</p><p onclick="engine(this)">-</p>
+		</div>
+		<div class="row clicable">
+			<p onclick="engine(this)">.</p><p onclick="engine(this)">0</p><p onclick="engine(this)">/</p><p onclick="engine(this)">x</p>
+		</div>
+		<div class="row rowS clicable">
+			<p id="reset" onclick="reset()">RESET</p><p id="eq" onclick="solving()">=</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

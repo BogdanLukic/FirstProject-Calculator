@@ -1,0 +1,245 @@
+
+:root{
+	--backgrounColor: #434A59;
+	--mainDropShadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));	
+
+	--hederTextColor: white;
+	--hederTogglePlace: #242D44;
+
+	--cursorColor: #D03F2F;
+	--cursorColorHover: #F96B5B;
+
+	--resultField: #181F33;
+	--resultText: #FFFFFF;;
+
+	--buttonsField: #242D44;
+
+	--buttons: #EAE3DC;
+	--buttonsShadow: inset 0px -4px 0px #B3A497;
+	--buttonsText: #434A59;
+	--buttonsHover: #FFFFFE;
+
+	--buttonsSpecialText: #FFFFFF;
+
+	--buttonReset: #647198;
+	--buttonResetShadow: inset 0px -4px 0px #414E73;
+	--buttonResetHovar: #A2B2E1;
+
+	--buttonEqual: #D03F2F;
+	--buttonEqualShadow: inset 0px -4px 0px #93261A;
+	--buttonEqualHover: #F96B5B;
+
+	--buttonDelete: #647198;
+	--buttonDeleteShadow: inset 0px -4px 0px #414E73;
+	--buttonDeleteHover: #A2B2E1;
+
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Spartan';
+}
+body{
+	background-color: var(--backgrounColor);
+}
+p{
+	display: inline-block;
+}
+
+#main{
+	width: 540px;
+	height: 708px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	filter: var(--mainDropShadow);
+	padding: 15px;
+	padding-top: 25px;
+}
+
+/*
+	Heder
+*/
+
+#heder{
+	width: 540px;
+	height: 44px;
+	color: var(--hederTextColor);
+	font-size: 36px;
+}
+#heder > p{
+	font-weight: bold;
+}
+
+#right
+{
+	position: relative;
+	right: -300px;
+	top: 0px;
+	font-size: 15px;
+	display: inline-block;
+	padding: 25px 10px;
+	padding-bottom: 0px;
+}
+
+.top
+{
+	position: relative;
+	top: -20px;
+	right: -18px;
+	margin-right: 15px;
+}
+
+/*
+	Toggle css
+*/
+#toggle{
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	background-color: var(--hederTogglePlace);
+	border-radius: 13px;
+	width: 75px;
+	height: 26px;
+	filter: var(--mainDropShadow);
+}
+#cursor{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: var(--cursorColor);
+	border-radius: 50%;
+	top: 20%;
+	left: 10%;
+	transition:  all 0.5s;
+}
+
+/*
+	resultField
+*/
+
+#resultField
+{
+	background-color: var(--resultField);
+	height: 20%;
+	margin-top: 20px;
+	border-radius: 13px;
+	text-align: right;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+#result
+{
+	color: var(--resultText);
+	position: relative;
+	font-family: 'Spartan';
+	font-weight: bold;
+	font-size: 55px;
+    word-wrap: break-word;
+}
+
+/*
+buttonsField
+*/
+
+#buttonsField
+{
+	position: relative;
+	background-color: var(--buttonsField);
+	height: 70%;
+	margin-top: 20px;
+	border-radius: 13px;
+}
+
+.row
+{
+	display: flex;
+	padding: 20px 25px;
+	line-height: 65px;
+	padding-bottom: 15px;
+}
+/**/
+.row > p
+{
+	width: 100px;
+	height: 60px;
+	background-color: var(--buttons); 
+	margin-right: auto;
+	margin-left: auto;
+	
+	text-align: center;
+	
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 13px;
+	color: var(--buttonsText);
+
+	box-shadow: var(--buttonsShadow);
+	transition: 0.2s;
+
+}
+.rowS>p
+{
+	width: 45%;
+	color: var(--buttonsSpecialText);
+}
+#reset
+{
+	background-color: var(--buttonReset);
+	box-shadow: var(--buttonResetShadow);
+	font-size: 20px;
+}
+#eq
+{
+	background-color: var(--buttonEqual);
+	box-shadow: var(--buttonEqualShadow);
+	font-size: 20px;
+}
+#del
+{
+	color: var(--buttonsSpecialText);
+	background-color: var(--buttonDelete);
+	box-shadow: var(--buttonDeleteShadow);
+	font-size: 20px;
+}
+
+
+/*
+	HOWERs
+*/
+
+.clicable>p
+{
+	cursor: pointer;
+}
+.row>p:hover
+{
+	background-color: var(--buttonsHover);
+	box-shadow: var(--buttonsShadow);
+	transition: 0.2s;
+}
+
+#cursor:hover
+{
+	background-color:var(--cursorColorHover);
+}
+
+#reset:hover
+{
+	background: var(--buttonResetHovar);
+	box-shadow: var(--buttonResetShadow);
+	transition: 0.2s;
+}
+#del:hover
+{
+	background: var(--buttonDeleteHover);
+	box-shadow: var(--buttonDeleteShadow);
+	transition: 0.2s;
+}
+#eq:hover
+{
+	background: var(--buttonEqualHover);
+	box-shadow: var(--buttonEqualShadow);
+	transition: 0.2s;
+}
