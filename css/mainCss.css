@@ -130,11 +130,11 @@ p{
 #resultField
 {
 	background-color: var(--resultField);
-	height: 20%;
+	height: 120px;
 	margin-top: 20px;
 	border-radius: 13px;
 	text-align: right;
-	padding: 40px 20px;
+	padding: 20px 20px;
 }
 #result
 {
@@ -143,7 +143,6 @@ p{
 	font-family: 'Spartan';
 	font-weight: bold;
 	font-size: 55px;
-    word-wrap: break-word;
 }
 
 /*
@@ -176,8 +175,6 @@ buttonsField
 	width: 100px;
 	height: 60px;
 	background-color: var(--buttons); 
-	/*margin-right: auto;
-	margin-left: auto;*/
 	
 	text-align: center;
 	
