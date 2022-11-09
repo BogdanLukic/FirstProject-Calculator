@@ -267,3 +267,11 @@ buttonsField
 		gap: 10px !important;
 	}
 }
+
+@media screen and ( max-width: 550px)
+{
+	#main
+	{
+		margin-top: 30px;
+	}
+}
