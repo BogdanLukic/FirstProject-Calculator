@@ -130,16 +130,20 @@ p{
 #resultField
 {
 	background-color: var(--resultField);
-	height: 120px;
+	
 	margin-top: 20px;
 	border-radius: 13px;
 	text-align: right;
 	padding: 20px 20px;
+
+	display: flex;
+	height: 130px;
+	align-items: center;
+	justify-content: flex-end;
 }
 #result
 {
 	color: var(--resultText);
-	position: relative;
 	font-family: 'Spartan';
 	font-weight: bold;
 	font-size: 55px;
