@@ -379,7 +379,7 @@ function deleteCharacter()
 		expression.pop();
 		first = -1;
 	}	
-	else if(ind > 0)	//znaci da ima decimale broj
+	else if(ind > 0 )	//znaci da ima decimale broj
 	{
 		decimalVal = Math.round(decimalVal / 10);
 		degree--;
@@ -388,7 +388,6 @@ function deleteCharacter()
 			ind = -1;
 			decimalVal = 0;
 		}	
-		console.log("DUPLO");
 	}
 	else if(expressionText[expressionText.length - 1]==".")
 	{

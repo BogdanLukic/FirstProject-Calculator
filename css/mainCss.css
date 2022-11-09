@@ -39,6 +39,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Spartan';
+	box-sizing: border-box;
 }
 body{
 	background-color: var(--backgrounColor);
@@ -54,8 +55,8 @@ p{
 	margin-right: auto;
 	margin-top: 100px;
 	filter: var(--mainDropShadow);
-	padding: 15px;
-	padding-top: 25px;
+	padding: 20px 15px;
+	margin-bottom: 100px;
 }
 
 /*
@@ -63,7 +64,7 @@ p{
 */
 
 #heder{
-	width: 540px;
+	width: 100%;
 	height: 44px;
 	color: var(--hederTextColor);
 	font-size: 36px;
@@ -75,7 +76,7 @@ p{
 #right
 {
 	position: relative;
-	right: -300px;
+	right: -270px;
 	top: 0px;
 	font-size: 15px;
 	display: inline-block;
@@ -127,7 +128,7 @@ p{
 	border-radius: 13px;
 	text-align: right;
 	padding: 40px 20px;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 #result
 {
@@ -150,14 +151,15 @@ buttonsField
 	height: 70%;
 	margin-top: 20px;
 	border-radius: 13px;
+	padding-top: 10px;
 }
 
 .row
 {
 	display: flex;
-	padding: 20px 25px;
+	padding: 15px 15px;
 	line-height: 65px;
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 }
 /**/
 .row > p
@@ -243,3 +245,8 @@ buttonsField
 	box-shadow: var(--buttonEqualShadow);
 	transition: 0.2s;
 }
+
+
+/*responsive*/
+
+@media only screen and (max-width: ) 
