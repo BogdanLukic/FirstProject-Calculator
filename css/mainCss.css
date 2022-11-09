@@ -49,8 +49,11 @@ p{
 }
 
 #main{
-	width: 540px;
-	height: 708px;
+	max-width: 540px;
+	max-height: 708px;
+
+	width: 100%;
+
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
@@ -68,6 +71,10 @@ p{
 	height: 44px;
 	color: var(--hederTextColor);
 	font-size: 36px;
+
+/*procitaj*/
+	display: flex;
+	justify-content: space-between;
 }
 #heder > p{
 	font-weight: bold;
@@ -76,7 +83,7 @@ p{
 #right
 {
 	position: relative;
-	right: -270px;
+	/*right: -270px;*/
 	top: 0px;
 	font-size: 15px;
 	display: inline-block;
@@ -128,7 +135,6 @@ p{
 	border-radius: 13px;
 	text-align: right;
 	padding: 40px 20px;
-	/*box-sizing: border-box;*/
 }
 #result
 {
@@ -160,6 +166,9 @@ buttonsField
 	padding: 15px 15px;
 	line-height: 65px;
 	/*padding-bottom: 15px;*/
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
 }
 /**/
 .row > p
@@ -167,8 +176,8 @@ buttonsField
 	width: 100px;
 	height: 60px;
 	background-color: var(--buttons); 
-	margin-right: auto;
-	margin-left: auto;
+	/*margin-right: auto;
+	margin-left: auto;*/
 	
 	text-align: center;
 	
@@ -180,11 +189,13 @@ buttonsField
 	box-shadow: var(--buttonsShadow);
 	transition: 0.2s;
 
+	flex-grow: 1;
 }
 .rowS>p
 {
 	width: 45%;
 	color: var(--buttonsSpecialText);
+	flex-grow: 1;
 }
 #reset
 {
@@ -249,4 +260,10 @@ buttonsField
 
 /*responsive*/
 
-@media only screen and (max-width: ) 
+@media screen and ( max-width: 350px)
+{
+	#buttonsField > .row.clicable{
+		padding:10px 15px !important;
+		gap: 10px !important;
+	}
+}
